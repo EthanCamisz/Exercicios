@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+    <!--6) Crie um programa que pergunte ao usuário quantos alunos tem em sala. Em seguida, através de uma estrutura de repetição, pede ao usuário que entre com a média de todos os alunos em sala, um por vez. Por fim, o programa deve mostrar a média aritmética da turma.-->
+</head>
+<body>
+    <script>
+
+        const numAlunos = parseInt(prompt("Quantos alunos estão em sala?"));
+
+let somaNotas = 0;
+let mediaFinal = 0;
+
+for (let i = 0; i < numAlunos; i++) {
+  const nota = parseFloat(prompt(`Digite a nota do aluno ${i+1}:`));
+  somaNotas += nota;
+}
+mediaFinal = somaNotas / numAlunos;
+
+alert(`A média da turma é ${mediaFinal.toFixed(2)}`);
+    </script>
+</body>
+</html>
